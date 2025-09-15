@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./src/image.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../node_modules/remixicon/fonts/remixicon.css">
+  <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="/src/style.css">
+  <title>Shop - Adena</title>
+</head>
+
+<body class="font-inter">
+  <header class="container mx-auto px-5">
+    <nav class="flex flex-row items-center py-10 w-full">
+      <div class="flex justify-start items-center w-150">
+        <img
+          src="https://wpbingo-adena.myshopify.com/cdn/shop/files/logo.png?crop=center&height=129&v=1729503852&width=399"
+          alt="" class="w-20 object-cover">
+      </div>
+      <div class="flex flex-row justify-center items-center w-full">
+        <ul class="flex flex-row justify-center gap-10 items-center">
+          <li class="duration-100 hover:text-[#63512D]"><a href="#" class="text-[14px] font-light">Home <i
+                class="ri-arrow-down-s-line"></i></a></li>
+          <li class="duration-100 hover:text-[#63512D]"><a href="#" class="text-[14px] font-light">Shop <i
+                class="ri-arrow-down-s-line"></i></a></li>
+          <li class="duration-100 hover:text-[#63512D]"><a href="#" class="text-[14px] font-light">Product <i
+                class="ri-arrow-down-s-line"></i></a>
+          </li>
+          <li class="duration-100 hover:text-[#63512D]"><a href="#" class="text-[14px] font-light">Blogs <i
+                class="ri-arrow-down-s-line"></i></a></li>
+          <li class="duration-100 hover:text-[#63512D]"><a href="#" class="text-[14px] font-light">Featured <i
+                class="ri-arrow-down-s-line"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex flex-row justify-end items-center w-150">
+        <ul class="flex flex-row justify-end gap-7 items-center">
+          <li class="duration-100 hover:text-[#63512D]">
+            <a href="#">
+              <i class="ri-search-line"></i>
+            </a>
+          </li>
+          <li class="duration-100 hover:text-[#63512D]">
+            <a href="#">
+              <i class="ri-user-3-fill"></i>
+            </a>
+          </li>
+          <li class="duration-100 hover:text-[#63512D]">
+            <a href="#">
+              <i class="ri-heart-line"></i>
+            </a>
+          </li>
+          <li class="duration-100 hover:text-[#63512D]">
+            <a href="#">
+              <i class="ri-shopping-bag-2-line"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="border-b border-b-[#e5e5e5]"></div>
+  <section id="head-name" class="mt-[45px] mb-[60px]">
+    <h1 class="text-[40px] text-center font-spectral font-light">Products</h1>
+    <div class="text-[16px] text-center">
+      <ol class="flex flex-row gap-2 justify-center font-light">
+        <li class="breadcrumb-item underline"><a href="#" class="duration-100 hover:text-[#63512D]">Home</a></li>
+        <li><a href="#">/</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Products</li>
+      </ol>
+    </div>
+  </section>
+  <section class="container mx-auto px-5 flex flex-row gap-10">
+    <div id="filters" class="w-1/4 flex flex-col gap-6">
+      <div id="collection" class="flex flex-col gap-2">
+        <div id="coll_name" class="flex flex-row justify-between">
+          <h2 class="text-[24px] font-light font-spectral">Collection</h2>
+          <i class="ri-arrow-down-s-line"></i>
+        </div>
+        <div id="coll-list">
+          <ul class="flex flex-col gap-2">
+            <li class="text-[16px] text-gray-400 font-light">Earring ()</li>
+            <li class="text-[16px] text-gray-400 font-light">Earring ()</li>
+            <li class="text-[16px] text-gray-400 font-light">Earring ()</li>
+          </ul>
+        </div>
+      </div>
+      <div id="availability" class="flex flex-col gap-2">
+        <div id="coll-name" class="flex flex-row justify-between">
+          <h2 class="text-[24px] font-light font-spectral">Availability</h2>
+          <i class="ri-arrow-down-s-line"></i>
+        </div>
+        <div id="coll-list">
+          <ul class="flex flex-col gap-2">
+            <li class="text-[16px] text-gray-400 font-light">In stock ()</li>
+            <li class="text-[16px] text-gray-400 font-light">Out of stock ()</li>
+          </ul>
+        </div>
+      </div>
+      <div id="color" class="flex flex-col gap-2">
+        <div id="coll-name" class="flex flex-row justify-between">
+          <h2 class="text-[24px] font-light font-spectral">Color</h2>
+          <i class="ri-arrow-down-s-line"></i>
+        </div>
+        <div id="coll-list">
+          <ul class="flex flex-row gap-3">
+            <li class="w-8 h-8 rounded-full bg-[#fff555] border border-gray-100"></li>
+            <li class="w-8 h-8 rounded-full bg-[#fff555] border border-gray-100"></li>
+            <li class="w-8 h-8 rounded-full bg-[#fff555] border border-gray-100"></li>
+          </ul>
+        </div>
+      </div>
+      <div id="size" class="flex flex-col gap-2">
+        <div id="coll-name" class="flex flex-row justify-between">
+          <h2 class="text-[24px] font-light font-spectral">Size</h2>
+          <i class="ri-arrow-down-s-line"></i>
+        </div>
+        <div id="coll-list">
+          <ul class="flex flex-row gap-2">
+            <li class="text-[16px] text-gray-400 font-light px-3 py-1 border border-gray-200">S ()</li>
+            <li class="text-[16px] text-gray-400 font-light px-3 py-1 border border-gray-200">M ()</li>
+            <li class="text-[16px] text-gray-400 font-light px-3 py-1 border border-gray-200">L ()</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="products" class="w-3/4 flex flex-col gap-6 mb-[60px]">
+      <div id="sort-by" class="flex flex-row justify-between">
+        <select name="sort-by" id="sort-by-select"
+          class="appearance-none border border-gray-200 rounded-sm py-1 px-4 pr-6 text-gray-500 font-inter font-light focus:outline-none focus:ring-gray-400 focus:border-gray-400">
+          <option class="text-[18px] font-light text-[#e3e3e3]" value="featured" selected>Featured</option>
+          <option class="text-[18px] font-light text-[#e3e3e3]" value="best-selling">Best selling</option>
+          <option class="text-[18px] font-light text-[#e3e3e3]" value="a-z">Alphabetically, A-Z</option>
+          <option class="text-[18px] font-light text-[#e3e3e3]" value="z-a">Alphabetically, Z-A</option>
+          <option class="text-[18px] font-light text-[#e3e3e3]" value="low-high">Price, low to high</option>
+          <option class="text-[18px] font-light text-[#e3e3e3]" value="high-low">Price, high to low</option>
+          <option class="text-[18px] font-light text-[#e3e3e3]" value="old-new">Date, old to new</option>
+          <option class="text-[18px] font-light text-[#e3e3e3]" value="new-old">Date, new to old</option>
+        </select>
+        <div id="apperance-grid" class="flex flex-row gap-3">
+          <i class="text-[20px] px-3 py-2 border border-gray-200 ri-layout-grid-fill"></i>
+          <i class="text-[20px] px-3 py-2 border border-gray-200 ri-layout-grid-2-fill"></i>
+        </div>
+      </div>
+      <div id="product-list" class="flex justify-start items-center gap-7.5 flex-wrap">
+        <div id="product" class="flex flex-col gap-4">
+          <div class="relative">
+            <img src="https://wpbingo-adena.myshopify.com/cdn/shop/files/pro.jpg?v=1714967262&width=600" alt=""
+              class="w-[280px] h-[330px] object-cover relative opacity-100 duration-500 hover:opacity-0">
+
+            <div id="hover-img">
+              <img src="https://wpbingo-adena.myshopify.com/cdn/shop/files/pro-2.jpg?v=1714967262&width=600" alt=""
+                class="w-[280px] h-[330px] object-cover absolute top-0 z-[-2]">
+            </div>
+
+            <div id="percent" class="absolute z-2 top-3 left-3">
+              <p class="px-2 py-1 bg-[#d96e40] text-white text-[14px]">-18%</p>
+            </div>
+          </div>
+          <div id="prod_txt" class="flex flex-col gap-2">
+            <h1 class="text-[16px] font-light text-[#111]">APOLLO COIN NECKLACE</h1>
+            <div id="price" class="flex flex-row gap-2">
+              <p id="discounted" class="text-[#d96d3f] line-through text-[16px]">$100.00</p>
+              <p class="text-[#111] line-through text-[16px]">$80.00</p>
+            </div>
+            <ul class="flex flex-row gap-2">
+              <li class="w-6 h-6 rounded-full bg-[#fff555] border border-gray-100"></li>
+              <li class="w-6 h-6 rounded-full bg-[#fff555] border border-gray-100"></li>
+              <li class="w-6 h-6 rounded-full bg-[#fff555] border border-gray-100"></li>
+            </ul>
+          </div>
+        </div>
+        <div id="product" class="flex flex-col gap-4">
+          <div class="relative">
+            <img src="https://wpbingo-adena.myshopify.com/cdn/shop/files/pro.jpg?v=1714967262&width=600" alt=""
+              class="w-[280px] h-[330px] object-cover relative opacity-100 duration-500 hover:opacity-0">
+
+            <div id="hover-img">
+              <img src="https://wpbingo-adena.myshopify.com/cdn/shop/files/pro-2.jpg?v=1714967262&width=600" alt=""
+                class="w-[280px] h-[330px] object-cover absolute top-0 z-[-2]">
+            </div>
+
+            <div id="percent" class="absolute z-2 top-3 left-3">
+              <p class="px-2 py-1 bg-[#d96e40] text-white text-[14px]">-18%</p>
+            </div>
+          </div>
+          <div id="prod_txt" class="flex flex-col gap-2">
+            <h1 class="text-[16px] font-light text-[#111]">APOLLO COIN NECKLACE</h1>
+            <div id="price" class="flex flex-row gap-2">
+              <p id="discounted" class="text-[#d96d3f] line-through text-[16px]">$100.00</p>
+              <p class="text-[#111] line-through text-[16px]">$80.00</p>
+            </div>
+            <ul class="flex flex-row gap-2">
+              <li class="w-6 h-6 rounded-full bg-[#fff555] border border-gray-100"></li>
+              <li class="w-6 h-6 rounded-full bg-[#fff555] border border-gray-100"></li>
+              <li class="w-6 h-6 rounded-full bg-[#fff555] border border-gray-100"></li>
+            </ul>
+          </div>
+        </div>
+        <div id="product" class="flex flex-col gap-4">
+          <div class="relative">
+            <img src="https://wpbingo-adena.myshopify.com/cdn/shop/files/pro.jpg?v=1714967262&width=600" alt=""
+              class="w-[280px] h-[330px] object-cover relative opacity-100 duration-500 hover:opacity-0">
+
+            <div id="hover-img">
+              <img src="https://wpbingo-adena.myshopify.com/cdn/shop/files/pro-2.jpg?v=1714967262&width=600" alt=""
+                class="w-[280px] h-[330px] object-cover absolute top-0 z-[-2]">
+            </div>
+
+            <div id="percent" class="absolute z-2 top-3 left-3">
+              <p class="px-2 py-1 bg-[#d96e40] text-white text-[14px]">-18%</p>
+            </div>
+          </div>
+          <div id="prod_txt" class="flex flex-col gap-2">
+            <h1 class="text-[16px] font-light text-[#111]">APOLLO COIN NECKLACE</h1>
+            <div id="price" class="flex flex-row gap-2">
+              <p id="discounted" class="text-[#d96d3f] line-through text-[16px]">$100.00</p>
+              <p class="text-[#111] line-through text-[16px]">$80.00</p>
+            </div>
+            <ul class="flex flex-row gap-2">
+              <li class="w-6 h-6 rounded-full bg-[#fff555] border border-gray-100"></li>
+              <li class="w-6 h-6 rounded-full bg-[#fff555] border border-gray-100"></li>
+              <li class="w-6 h-6 rounded-full bg-[#fff555] border border-gray-100"></li>
+            </ul>
+          </div>
+        </div>
+        <div id="product" class="flex flex-col gap-4">
+          <div class="relative">
+            <img src="https://wpbingo-adena.myshopify.com/cdn/shop/files/pro.jpg?v=1714967262&width=600" alt=""
+              class="w-[280px] h-[330px] object-cover relative opacity-100 duration-500 hover:opacity-0">
+
+            <div id="hover-img">
+              <img src="https://wpbingo-adena.myshopify.com/cdn/shop/files/pro-2.jpg?v=1714967262&width=600" alt=""
+                class="w-[280px] h-[330px] object-cover absolute top-0 z-[-2]">
+            </div>
+
+            <div id="percent" class="absolute z-2 top-3 left-3">
+              <p class="px-2 py-1 bg-[#d96e40] text-white text-[14px]">-18%</p>
+            </div>
+          </div>
+          <div id="prod_txt" class="flex flex-col gap-2">
+            <h1 class="text-[16px] font-light text-[#111]">APOLLO COIN NECKLACE</h1>
+            <div id="price" class="flex flex-row gap-2">
+              <p id="discounted" class="text-[#d96d3f] line-through text-[16px]">$100.00</p>
+              <p class="text-[#111] line-through text-[16px]">$80.00</p>
+            </div>
+            <ul class="flex flex-row gap-2">
+              <li class="w-6 h-6 rounded-full bg-[#fff555] border border-gray-100"></li>
+              <li class="w-6 h-6 rounded-full bg-[#fff555] border border-gray-100"></li>
+              <li class="w-6 h-6 rounded-full bg-[#fff555] border border-gray-100"></li>
+            </ul>
+          </div>
+        </div>
+        <div id="product" class="flex flex-col gap-4">
+          <div class="relative">
+            <img src="https://wpbingo-adena.myshopify.com/cdn/shop/files/pro.jpg?v=1714967262&width=600" alt=""
+              class="w-[280px] h-[330px] object-cover relative opacity-100 duration-500 hover:opacity-0">
+
+            <div id="hover-img">
+              <img src="https://wpbingo-adena.myshopify.com/cdn/shop/files/pro-2.jpg?v=1714967262&width=600" alt=""
+                class="w-[280px] h-[330px] object-cover absolute top-0 z-[-2]">
+            </div>
+
+            <div id="percent" class="absolute z-2 top-3 left-3">
+              <p class="px-2 py-1 bg-[#d96e40] text-white text-[14px]">-18%</p>
+            </div>
+          </div>
+          <div id="prod_txt" class="flex flex-col gap-2">
+            <h1 class="text-[16px] font-light text-[#111]">APOLLO COIN NECKLACE</h1>
+            <div id="price" class="flex flex-row gap-2">
+              <p id="discounted" class="text-[#d96d3f] line-through text-[16px]">$100.00</p>
+              <p class="text-[#111] line-through text-[16px]">$80.00</p>
+            </div>
+            <ul class="flex flex-row gap-2">
+              <li class="w-6 h-6 rounded-full bg-[#fff555] border border-gray-100"></li>
+              <li class="w-6 h-6 rounded-full bg-[#fff555] border border-gray-100"></li>
+              <li class="w-6 h-6 rounded-full bg-[#fff555] border border-gray-100"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="border-b border-b-[#e5e5e5]"></div>
+  <footer class="container mx-auto px-5 pt-10 flex flex-col gap-20 m-10">
+    <div class="flex flex-row justify-between items-start">
+      <div id="newsletter" class="flex flex-col gap-6">
+        <h1 class="capitalize font-medium text-[30px]">Newsletter sign-up</h1>
+        <p>Get insider information about exclusive offers, events and more.</p>
+        <div class="flex gap-0">
+          <div class="border-b border-b-black">
+            <input type="text" name="subscribe" placeholder="Email address..."
+              class="px-5 py-2 bg-white border-none outline-none placeholder:text-gray-400">
+          </div>
+          <button class="px-5 py-2 bg-white border border-black outline-none">SIGN UP</button>
+        </div>
+      </div>
+      <div id="about_us" class="flex flex-col gap-2 font-light">
+        <h2 class="font-medium">About us</h2>
+        <ul>
+          <li>Our shops</li>
+          <li>Contact</li>
+          <li>Artists</li>
+          <li>Local Giving</li>
+          <li>Press</li>
+        </ul>
+      </div>
+      <div id="categories" class="flex flex-col gap-2 font-light">
+        <h2 class="font-medium">Categories</h2>
+        <ul>
+          <li>New In</li>
+          <li>Earrings</li>
+          <li>Rings</li>
+          <li>Necklace</li>
+          <li>Bracelets</li>
+        </ul>
+      </div>
+      <div id="information" class="flex flex-col gap-2 font-light">
+        <h2 class="font-medium">Information</h2>
+        <ul>
+          <li>Faq</li>
+          <li>Size guide</li>
+          <li>Shipping</li>
+          <li>Order Status</li>
+          <li>Exchanges</li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-light text-[14px]">Copyright © 2024. All Right Reserved</p>
+      <div class="flex flex-row gap-4">
+        <i class="ri-facebook-fill border rounded-full px-3 py-2"></i>
+        <i class="ri-twitter-x-line border rounded-full px-3 py-2"></i>
+        <i class="ri-whatsapp-line border rounded-full px-3 py-2"></i>
+        <i class="ri-tiktok-fill border rounded-full px-3 py-2"></i>
+      </div>
+    </div>
+  </footer>
+  <!-- <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
